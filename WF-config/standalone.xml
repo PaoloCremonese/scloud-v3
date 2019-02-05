@@ -549,8 +549,10 @@
         <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9990}"/>
         <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9993}"/>
         <socket-binding name="ajp" port="${jboss.ajp.port:8009}"/>
-        <socket-binding name="http" port="${jboss.http.port:8080}"/>
-        <socket-binding name="https" port="${jboss.https.port:8443}"/>
+        <!-- <socket-binding name="http" port="${jboss.http.port:8080}"/> -->
+        <!-- <socket-binding name="https" port="${jboss.https.port:8443}"/> -->
+        <socket-binding name="http" port="${jboss.http.port:8088}"/>
+        <socket-binding name="https" port="${jboss.https.port:8080}"/>
         <socket-binding name="jacorb" interface="unsecure" port="3528"/>
         <socket-binding name="jacorb-ssl" interface="unsecure" port="3529"/>
         <socket-binding name="messaging-group" port="0" multicast-address="${jboss.messaging.group.address:231.7.7.7}" multicast-port="${jboss.messaging.group.port:9876}"/>
